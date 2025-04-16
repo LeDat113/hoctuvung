@@ -1,0 +1,156 @@
+:root {
+  --bg: #f4fff4;
+  --text: #2f5f2f;
+  --accent: #a8e6a3;
+  --border: #90c490;
+  --hover: #e3fbe3;
+  --danger: #f87171;
+  --success: #34d399;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #1b5e20;
+  font-size: 2em;
+}
+
+.controls, .add-word, .bulk-input, .quiz-mode {
+  text-align: center;
+  margin: 20px auto;
+}
+
+button {
+  background-color: var(--accent);
+  border: none;
+  padding: 10px 16px;
+  margin: 6px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #1b3c1b;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #7fdc7f;
+}
+
+input[type="text"], textarea {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  width: 180px;
+  font-size: 14px;
+}
+
+textarea {
+  width: 90%;
+  height: 120px;
+}
+
+table {
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+th {
+  background-color: #c9efc9;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: var(--hover);
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Quiz styles */
+#quizContainer {
+  background-color: #e6fbe6;
+  padding: 20px;
+  border: 2px dashed var(--accent);
+  width: 60%;
+  margin: 30px auto;
+  border-radius: 12px;
+}
+
+#quizWord {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#quizInput {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+#quizResult {
+  font-weight: bold;
+  font-size: 1em;
+  color: var(--danger);
+}
+
+#quizScore {
+  font-weight: bold;
+  font-size: 1em;
+  color: var(--success);
+  margin-top: 10px;
+}
+
+/* Dark mode */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.dark-mode table {
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+}
+
+.dark-mode th {
+  background-color: #444;
+}
+
+.dark-mode td {
+  border-color: #555;
+}
+
+.dark-mode input, .dark-mode textarea {
+  background-color: #3c3c3c;
+  color: #fff;
+  border-color: #777;
+}
+
+.dark-mode button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.dark-mode #quizContainer {
+  background-color: #2d2d2d;
+  border-color: #4caf50;
+}
